@@ -1,0 +1,10 @@
+{
+   "name": "Tutoriel",
+   "version": "0.0.1",
+   "description": "Authentification avec PassportJS (Front-end : Bootstrap et Hogan Twitter)",
+   "dependencies": {
+      "express": "3.1.0",
+      "hogan-express": "0.3.3",
+      "nconf": "0.6.7"
+   }
+}

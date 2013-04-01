@@ -1,0 +1,121 @@
+		
+		{{! 
+			Commentaire HoganJs : 
+			Cette vue sera englobée dans la vue layout.html 
+			
+			On utilise Bootstrap pour :
+			   * Afficher deux onglets : connexion et inscription
+			   * Afficher le formulaire de connexion
+
+			On utilise Hogan pour :
+			   * Afficher éventuellement un message d'erreur 
+		}}
+
+		<!-- Barre de navigation -->
+		<ul class="breadcrumb">
+			<li><a href="http://s4tori.info/blog/">s4tori.info</a> <span class="divider">/</span></li>
+			<li><a href="https://github.com/s4tori/Tutoriels/tree/master/2013-03-31-BootstrapTwitter-HoganTwitter">Code-source</a> <span class="divider">/</span></li>
+			<li><a href="http://s4tori.info/blog/?p=475">Tutoriel</a> <span class="divider">/</span></li>
+			<li class="active">Connexion</li>
+		</ul>
+
+		<div id="loginForm" class="container">
+		
+
+			<div class="tabbable">
+
+				<!-- On définit via bootstrap deux onglets : connexion et inscription -->
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab-login" data-toggle="tab"><i class="icon-user"></i>&nbsp;Login</a></li>
+					<li class=""><a href="#tab-register" data-toggle="tab"><i class="icon-pencil"></i>&nbsp;Register</a></li>
+				</ul>
+				
+				{{! Si un message d'erreur existe, on l'affiche }}
+				{{#error}}
+				<div class="alert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>Warning !</strong> {{error}}
+				</div>
+				{{/error}}
+				
+				<!-- Le contenu des onglets doivent être stockés dans "tab-content" -->
+				<div class="tab-content">
+					
+					<!-- DEBUT onglet connexion | Formulaire de connexion -->
+					<div class="tab-pane active" id="tab-login">
+						
+						<form id="formLogin" action="/login" method="POST" class="form-horizontal">
+							<fieldset>
+								<legend>Sign in</legend>
+								
+								<div class="control-group">
+									<label class="control-label" for="buttonOpenId">Provider</label>
+									<div class="controls">
+										<div class="btn-group" data-toggle="buttons-radio">
+											<button id="buttonLocal"  name="includeicon" type="button" class="btn btn-large btn-primary" value="1"><i class="icon-home icon-white"></i> Local</button>
+											<button id="buttonOpenId" name="includeicon" type="button" class="btn btn-large active" value="0"><i class="icon-globe"></i> OpenID</button>
+											<a      id="buttonGoogle" href="/auth/google" class="btn btn-large"><i class="icon-google-plus-sign"></i> Google</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label class="control-label" for="identifier">OpenID URL</label>
+									<div class="controls">
+										<div class="input-prepend">
+											<span class="add-on"><i class="icon-user"></i></span>
+											<input value="" id="identifier" name="identifier" type="text" placeholder="Ex : http://myOpenID.myopenid.com/" class="input-xlarge span4">
+										</div>
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label class="control-label" for="username">Username</label>
+									<div class="controls">
+										<div class="input-prepend">
+											<span class="add-on"><i class="icon-user"></i></span>
+											<input value="Dieu" id="username" name="username" type="text" placeholder="Username" class="input-xlarge span4">
+										</div>
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label class="control-label" for="password">Password</label>
+									<div class="controls">
+										<div class="input-prepend">
+											<span class="add-on"><i class="icon-lock"></i></span>
+											<input value="secret" id="password" name="password" type="password" placeholder="Password" class="password input-xlarge span4">
+										</div>
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label class="control-label" for="buttonSubmit"></label>
+									<div class="controls">
+										<button id="buttonSubmit" type="submit" class="btn btn-large btn-primary span2">Sign in</button>
+									</div>
+								</div>
+								
+								<div class="clear"></div>
+							</fieldset>
+						</form>
+						
+					</div>
+					<!-- FIN onglet connexion | Formulaire de connexion -->
+					
+					<!-- DEBUT onglet inscription | Formulaire d'enregistrement -->
+					<div class="tab-pane" id="tab-register">
+						
+						<form name="form" method="post" action="/" class="form">
+							<fieldset>
+								<legend>New Users Registration</legend>
+								<p>Registrations are closed.</p>		
+							</fieldset>
+						</form>
+					</div>
+					<!-- FIN onglet inscription | Formulaire d'enregistrement -->
+					
+				</div>
+			</div>
+			
+		</div>

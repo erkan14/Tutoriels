@@ -8,7 +8,7 @@ Ce tutoriel expose la place d'un service d'authentification avec **Node.js** et 
 L'accès au service est sécurisé, l'authentification pouvant s'effectuer via un compte interne à l'application ou à l'aide d'un provider [OpenID](http://openid.net/) ou via un compte Google. Passport permet de gérer l'authentification via une multitude de services (Facebook, Twitter, OAuth, etc).
 
 <p align="center">
-  <img src="https://raw.github.com/s4tori/Tutoriels/2013-03-31-BootstrapTwitter-HoganTwitter/master/public/img/welcome.jpg" alt="Interface" />
+  <img src="https://raw.github.com/s4tori/Tutoriels/master/2013-03-31-BootstrapTwitter-HoganTwitter/public/img/welcome.jpg" alt="Interface" />
 </p>
 
 **La partie Front-End est fournit par :**

@@ -1,0 +1,28 @@
+		
+		{{! 
+			Commentaire HoganJs : 
+			Cette vue sera englobée dans la vue layout.html 
+			
+			On utilise Bootstrap pour :
+			   * Afficher les informations utilisateurs
+
+			On utilise Hogan pour :
+			   * Récupérer les informations utilisateurs
+		}}
+
+		<ul class="breadcrumb">
+			<li><a href="http://s4tori.info/blog/">s4tori.info</a> <span class="divider">/</span></li>
+			<li><a href="https://github.com/s4tori/Tutoriels/tree/master/2013-04-27-Express-PassportJs/">Code-source</a> <span class="divider">/</span></li>
+			<li><a href="http://s4tori.info/blog/?p=561">Tutoriel</a> <span class="divider">/</span></li>
+			<li class="active" class=""><a href="logout">Sign out</a></li>
+		</ul>
+
+		<div id="loginForm" class="container">
+			<h1><i class="icon-key"></i> Hello World</h1>
+
+			{{! Commentaire : on affiche les infos de l'utilisateur connecté }}
+			<blockquote>
+				<p>Vous êtes maintenant connecté, cette page est donc accessible.</p>
+				<small>Utilisateur {{user.type}} : <cite title="user">{{user.login}}</cite> | Nombre de connexions : <cite title="conn">{{user.nbConn}}</cite> </small>
+			</blockquote>
+		</div>

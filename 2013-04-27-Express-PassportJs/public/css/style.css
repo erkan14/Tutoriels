@@ -1,0 +1,101 @@
+/*
+  +---------------------------------------------------------+
+  |  Global                                                 |
+  +---------------------------------------------------------+
+*/
+
+/* Pour le placement du footer en bas de page */
+html, body {
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px;
+}
+
+/*
+  +---------------------------------------------------------+
+  |  Header                                                 |
+  +---------------------------------------------------------+
+*/
+
+header {
+
+	position: relative;
+	padding: 40px 0;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+
+	background: #0074C2;
+	background-image: linear-gradient(bottom, #0074C2 0%, #0CA8F0 100%);
+	background-image: -o-linear-gradient(bottom, #0074C2 0%, #0CA8F0 100%);
+	background-image: -moz-linear-gradient(bottom, #0074C2 0%, #0CA8F0 100%);
+	background-image: -webkit-linear-gradient(bottom, #0074C2 0%, #0CA8F0 100%);
+	background-image: -ms-linear-gradient(bottom, #0074C2 0%, #0CA8F0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0074C2', endColorstr='#0CA8F0',GradientType=1 );
+
+	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+
+}
+
+header h1 {
+	font-size: 100px;
+	line-height: 1;
+	letter-spacing: -2px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-rendering: optimizelegibility;
+}
+
+header p {
+	max-width:750px;
+	margin:0 auto 10px auto;
+	text-align: center;
+	font-style: italic;
+}
+
+/*
+  +---------------------------------------------------------+
+  |  Formulaire de connexion                                |
+  +---------------------------------------------------------+
+*/
+
+#loginForm {
+	width: auto;
+	max-width: 680px;
+}
+
+#loginForm form {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: whiteSmoke;
+	border: 1px solid #EEE;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#loginForm .control-group input, #loginForm .control-group .add-on {
+	font-size: 16px;
+	height: auto;
+	padding: 13px 15px;
+}
+
+#loginForm .control-group .control-label {
+	padding-top: 15px;
+}
+
+#loginForm #buttonSubmit {
+	float:right;
+	margin-right:25px;
+}

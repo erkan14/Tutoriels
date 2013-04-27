@@ -1,15 +1,15 @@
 # Tutoriel Authentification (Frond-end Twitter, Back-End Node.js)
 
-## Partie 1 (Frond-End)
+## Partie 2 (Back-End)
 
 Ce tutoriel expose la place d'un service d'authentification avec **Node.js** et le module **Passport**.<br />
-**Cette première partie se concentre sur la mise en place de l'interface Front-End.**<br />
-La seconde partie est disponible [ici](https://github.com/s4tori/Tutoriels/tree/master/2013-04-27-Express-PassportJs).
+**Cette deuxième partie se concentre sur la mise en place de l'authentification coté serveur.**<br />
+La première partie est disponible [ici](https://github.com/s4tori/Tutoriels/tree/master/2013-03-31-BootstrapTwitter-HoganTwitter).
 
 L'accès au service est sécurisé, l'authentification pouvant s'effectuer via un compte interne à l'application ou à l'aide d'un provider [OpenID](http://openid.net/) ou via un compte Google. Passport permet de gérer l'authentification via une multitude de services (Facebook, Twitter, OAuth, etc).
 
 <p align="center">
-  <img src="https://raw.github.com/s4tori/Tutoriels/master/2013-03-31-BootstrapTwitter-HoganTwitter/public/img/welcome.jpg" alt="Interface" />
+  <img src="https://raw.github.com/s4tori/Tutoriels/master/2013-04-27-Express-PassportJs/public/img/welcome.jpg" alt="Interface" />
 </p>
 
 **La partie Front-End est fournit par :**
@@ -17,7 +17,7 @@ L'accès au service est sécurisé, l'authentification pouvant s'effectuer via u
  - [Bootstrap](http://twitter.github.com/bootstrap/) : Framework Front-end CSS/JS par Twitter (CSS compatibles tout périphériques, responsive design, etc)
  - [Hogan](http://twitter.github.com/hogan.js/) : générateur/compilateur de template basé sur [Mustache](http://mustache.github.com/) par Twitter
 
-**La partie back-End est fournit par  (traité lors de la partie 2) :**
+**La partie back-End est fournit par :**
 
 - [Node.js](http://nodejs.org/) : Serveur basé sur le moteur Javascript V8 de Chrome
 - [Module express](http://expressjs.com/) : Framework d'application Web (support des middlewares)

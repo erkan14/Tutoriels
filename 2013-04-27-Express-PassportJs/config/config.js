@@ -21,7 +21,7 @@ module.exports = function(app){
 		app.engine('html', hogan);                          // Fichiers *.HTML rendu via HoganJs
 		app.set('layout', 'layout');                        // Vue globale par défaut (views/layout.html)
 		app.set('views', __dirname + '/../views')           // Chemin vers les fichiers templates (répertoire views)
-		//app.enable('view cache');	                        // Mise en cache des vues (true par défaut en production)
+		//app.enable('view cache');                         // Mise en cache des vues (true par défaut en production)
 	});
 
 	// --------------------------------------------------------------------------
